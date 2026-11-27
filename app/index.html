@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bargain Beacon — Real Black Friday &amp; Cyber Monday Deals, Checked 27 Nov 2026</title>
+<meta name="description" content="31 real Black Friday and Cyber Monday deals, each checked on 27 Nov 2026 at Amazon, Best Buy, Walmart and Target — with sale price, usual price, discount and an honest verdict on whether it is really a deal.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><path fill="currentColor" d="M12 2 L19 9 L12 22 L5 9 Z"/><circle cx="12" cy="9" r="2.6" fill="#1d1526"/></svg></span>
+      <div>
+        <h1>Bargain Beacon</h1>
+        <p class="tagline">Real Black Friday &amp; Cyber Monday deals — checked, not guessed.</p>
+      </div>
+    </div>
+    <div class="masthead-note">
+      <p><strong>Black Friday is today, 27 Nov 2026.</strong> Every price below was read on 27 Nov 2026, about 06:15 UTC, from a deals roundup or the store's own Black Friday page. Prices move — the check time on each deal says when its price was true.</p>
+    </div>
+  </div>
+</header>
+
+<main id="view">
+  <section class="stats" id="stats" aria-label="Deal summary"></section>
+
+  <section class="controls" aria-label="Find a deal">
+    <label class="search-box">
+      <span class="visually-hidden">Search deals</span>
+      <input id="search" type="search" placeholder="Search a product, brand or store…" autocomplete="off">
+    </label>
+    <div class="chip-row" id="categories" role="group" aria-label="Category"></div>
+    <div class="select-row">
+      <label>Store
+        <select id="store">
+          <option value="">All stores</option>
+        </select>
+      </label>
+      <label>Minimum discount
+        <select id="min-discount">
+          <option value="0">Any discount</option>
+          <option value="25">25% off or more</option>
+          <option value="40">40% off or more</option>
+          <option value="50">50% off or more</option>
+        </select>
+      </label>
+      <label>Sort by
+        <select id="sort">
+          <option value="discount">Biggest discount first</option>
+          <option value="saving">Biggest dollar saving first</option>
+          <option value="price-asc">Lowest price first</option>
+          <option value="price-desc">Highest price first</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </label>
+      <label class="check">
+        <input id="new-lows" type="checkbox"> New lows only
+      </label>
+    </div>
+  </section>
+
+  <p class="result-count" id="result-count" aria-live="polite"></p>
+  <section class="grid" id="grid" aria-label="Deals"></section>
+  <p class="empty" id="empty" hidden>No deals match that search. Try a different word, or clear a filter.</p>
+
+  <section class="detail" id="detail" hidden></section>
+</main>
+
+<footer class="foot">
+  <h2>How this board was built</h2>
+  <p>An agent read Black Friday roundups and store pages on 27 Nov 2026 — Popular Science, Product Bible, 9to5Toys, Best Buy's own announcement, Walmart's Top 100 list, DealNews, MacRumors and Clark Deals — and wrote down each price exactly as the source showed it. The source of every deal is named on its card, with the time its price was checked.</p>
+  <p>Verdicts are the agent's own: <strong>New low</strong> means a source says it is the lowest price ever; <strong>Strong deal</strong> means a deep cut of about 30% or more; <strong>Routine</strong> means a real discount, but a modest one. Nothing here is listed above its usual price.</p>
+  <p>“View at store” opens the store's own search for that product, so you land on the live listing. Prices and stock change fast on Black Friday — check the store page before you buy. Bargain Beacon is an independent guide, not affiliated with any store.</p>
+  <p class="foot-small">31 deals · 4 stores · checked 27 Nov 2026 06:15 UTC · Built by an AI agent for make.fun's Black Friday deal finder bounty.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
